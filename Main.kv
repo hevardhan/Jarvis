@@ -1,0 +1,21 @@
+MDScreen :
+    name : "main"   
+    MDFloatLayout:
+        md_bg_color : 1,1,1,1
+        Image :
+            source : "jarvis.png"
+            size_hint : .5,.5
+            pos_hint : {"center_x":.5,"center_y":.8}
+        MDLabel :
+            text : "J.A.R.V.I.S"
+            font_name : "DS-DIGIT.TTF"
+            font_size : "35sp"
+            pos_hint : {"center_x":.5,"center_y":.5}
+            halign : "center"
+            theme_text_color:"Custom"
+            text_color : "#00008B"
+        MDRaisedButton :
+            text :"Start"
+            pos_hint : {"center_x":.5,"center_y":.1}
+            on_release : 
+                root.manager.current = "chats"
